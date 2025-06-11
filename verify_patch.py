@@ -7,7 +7,7 @@ from config import DATABASE
 import os
 
 # Load verification settings from environment
-IS_VERIFY = os.environ.get("IS_VERIFY", "True").lower() in ("true", "1", "yes")
+IS_VERIFY = os.environ.get("IS_VERIFY", "false").lower() in ("true", "1", "yes")
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "shortner.in")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "68d57cea090ed0493c324c0b66504199e620726a")
 HOW_TO_VERIFY = os.environ.get('HOW_TO_VERIFY', "https://t.me/movie_masalaprouk/354")
